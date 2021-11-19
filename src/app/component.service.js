@@ -1,4 +1,4 @@
-class ComponentService {
+export class ComponentService {
   constructor() {
     this.numberOneInput = document.getElementById("numberOne");
     this.numberTwoInput = document.getElementById("numberTwo");
@@ -8,7 +8,7 @@ class ComponentService {
   }
 
   getInputs() {
-    return [this.numberOneInput, this.numberTwoInput];
+    return [this.numberOneInput.value, this.numberTwoInput.value];
   }
 
   setResult(str) {
